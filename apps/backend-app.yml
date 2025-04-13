@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/CHARANPRAJWAL/nodejs-app.git
+    repoURL: https://github.com/CHARANPRAJWAL/gitops-argo-demo.git
     targetRevision: main
     path: backend
   destination:
