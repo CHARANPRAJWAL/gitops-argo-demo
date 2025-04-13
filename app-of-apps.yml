@@ -1,8 +1,8 @@
-# k3s-files/app-of-apps.yaml
+# app-of-apps.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: node-and-next-app
+  name: next-and-node-app
   namespace: argocd
 spec:
   destination:
@@ -10,9 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/CHARANPRAJWAL/nodejs-app.git
+    repoURL: https://github.com/CHARANPRAJWAL/gitops-argo-demo.git
     targetRevision: main
-    path: k3s-files/apps
+    path: apps
   syncPolicy:
     automated:
       prune: true
