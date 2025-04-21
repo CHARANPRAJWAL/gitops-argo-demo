@@ -6,7 +6,7 @@ metadata:
     app: nextjs-app
   namespace: nodejs-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nextjs-app
