@@ -19,12 +19,12 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: charanprajwal001/nodejs-app:latest   # Replace with your actual image
+          image: charanprajwal001/nodejs-app:latest   
           ports:
             - containerPort: 3000
           envFrom:
             - configMapRef:
-                name: nodejs-configmap  # Load env variables from ConfigMap
+                name: nodejs-configmap  
 
 ---
 apiVersion: v1
@@ -37,6 +37,6 @@ spec:
     app: nodejs-app
   ports:
     - protocol: TCP
-      port: 3010        # Exposed service port
-      targetPort: 3000  # Matches containerPort in Deployment
-  type: LoadBalancer  # Use NodePort or LoadBalancer if needed
+      port: 3010        
+      targetPort: 3000  
+  type: LoadBalancer 
