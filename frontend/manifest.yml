@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nextjs-app
-          image: charanprajwal001/nextjs-app:20250411-01   # Replace with your actual image
+          image: charanprajwal001/nextjs-app:20250411-01   
           ports:
             - containerPort: 3000
 
@@ -32,6 +32,6 @@ spec:
     app: nextjs-app
   ports:
     - protocol: TCP
-      port: 3001       # Exposed service port
-      targetPort: 3000  # Matches containerPort in Deployment
-  type: LoadBalancer  # Use NodePort or LoadBalancer if needed
+      port: 3001     
+      targetPort: 3000  
+  type: LoadBalancer 
